@@ -9,6 +9,10 @@ html, body {
 	margin: auto;
 }
 
+footer {
+	position: relative;
+}
+
 .title h2 {
 	font-size: 3em;
 	text-align: center;
