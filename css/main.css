@@ -17,6 +17,10 @@ html, body {
 	font-weight: 600;
 }
 
+.title h2 img {
+	max-width: 95vw;
+}
+
 .title h3 {
         font-size: 1.2em;
         text-align: center;
