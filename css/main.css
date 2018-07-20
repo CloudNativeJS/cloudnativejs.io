@@ -17,6 +17,10 @@ footer {
 	width: 100%;
 }
 
+footer .ibm-columns {
+	padding-top: 10px;
+}
+
 .title h2 {
 	font-size: 2.6em;
 	text-align: center;
