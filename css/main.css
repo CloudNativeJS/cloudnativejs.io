@@ -10,6 +10,13 @@ html, body {
 	margin: auto;
 }
 
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+
 .title h2 {
 	font-size: 2.6em;
 	text-align: center;
