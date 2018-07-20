@@ -28,3 +28,19 @@ p {
 	margin: 20px 0;
 	font-size: 18px;
 }
+
+a {
+  color: blue;
+}
+
+strong {
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ul > li {
+    margin-left: 3em;
+}
