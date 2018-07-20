@@ -1,0 +1,141 @@
+html, body {
+  font-family: IBM Plex Sans, sans-serif;
+  height: 100%;
+}
+
+.container {
+	max-width: 1200px;
+	width: 100%;
+	margin: auto;
+}
+
+.title h2 {
+	font-size: 2.6em;
+	text-align: center;
+	margin: 40px 0 10px 0;
+	font-weight: 600;
+}
+
+.title h3 {
+        font-size: 1.2em;
+        text-align: center;
+        margin: 10px 0 40px 0;
+        font-weight: 550;
+        color: #666666;
+}
+
+.title h4 {
+	text-align: justify;
+	width: 60%;
+	margin: auto;
+	padding-bottom: 20px;
+	font-weight: 500;
+	line-height: 20px;
+
+}
+
+.resource-title {
+	text-align: center;
+	font-size: 2.0em;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.tiles {
+	background: linear-gradient(rgb(85, 210, 26), rgb(70, 170, 16));
+	width: 100%;
+	margin: 0;
+	box-shadow: 0px 0px 15px rgba(185, 185, 185, 0.8);
+}
+
+.tiles h2 {
+	text-align: center;
+	font-weight: 600;
+	font-size: 2em;
+	padding-bottom: 20px;
+
+}
+
+.tiles a {
+	text-decoration: none;
+}
+
+.tiles-section {
+	 display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+		width: 1000px;
+		margin: auto;
+		border-radius: 20px;
+		padding: 20px;
+}
+
+.tile {
+	border: 1px solid black;
+	background-color: white;
+	border-radius: 15px;
+	width: 280px;
+	height: 200px;
+	margin: 5px 5px;
+	padding: 10px 10px;
+	box-shadow: 0px 0px 15px rgba(185, 185, 185, 0.8);
+}
+
+.tile:hover {
+	box-shadow: 0px 0px 18px rgba(70, 70, 70, 0.8);
+}
+
+.tile img {
+	text-align: center;
+	margin: auto;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.tile h3 {
+	text-align: center;
+	margin-top: 10px;
+	font-weight: 600;
+	font-size: 1.1em;
+}
+
+.tile p {
+	text-align: center;
+	margin-top: 30px;
+	line-height: 20px;
+}
+
+.contact {
+	text-align: center;
+	font-size: 1.8em;
+	font-weight: 600;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.footer {
+	text-align: center;
+	margin-top: 20px;
+	position: fixed;
+}
+
+.footer h2 {
+	font-size: 1.4em;
+	margin-bottom: 10px;
+	font-weight: 500;
+}
+
+.footer h3 {
+	font-weight: 300;
+	font-size: 1.6em;
+	margin-bottom: 20px;
+}
+
+.button:focus, .button:active {
+  outline:0;
+}
+
+.button:active {
+  box-shadow: 0 0.5px 2px #5f5757;
+  transform: translateY(1px);
+}
