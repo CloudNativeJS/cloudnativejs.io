@@ -33,7 +33,6 @@ html, body {
 }
 
 .tiles {
-	background-color: rgb(75, 180, 26);
 	width: 100%;
 	margin: 0;
 }
@@ -62,7 +61,6 @@ html, body {
 	background-color: white; 
 	border-radius: 20px;
 	width: 300px;
-	height: 180px;
 	margin: 5px 5px;
 	padding: 10px 10px;
 	box-shadow: 0px 0px 15px rgba(185, 185, 185, 0.8);
@@ -87,7 +85,7 @@ html, body {
 
 .tile p {
 	text-align: center;
-	margin-top: 40px;
+	margin-top: 20px;
 }
 
 .contact {
