@@ -47,7 +47,7 @@ html, body {
 }
 
 .tiles {
-	background: linear-gradient(rgb(85, 210, 26), rgb(70, 170, 16));
+	background-color: #2d74da;
 	width: 100%;
 	margin: 0;
 	box-shadow: 0px 0px 15px rgba(185, 185, 185, 0.8);
