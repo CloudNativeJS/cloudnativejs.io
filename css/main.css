@@ -4,6 +4,10 @@ html, body {
   background-color: #f4f4f4;
 }
 
+body {
+  padding-bottom: 9.5em;
+}
+
 .container {
 	max-width: 1200px;
 	width: 100%;
@@ -62,7 +66,6 @@ footer .ibm-columns {
 	width: 100%;
 	margin: 0;
 	box-shadow: 0px 0px 15px rgba(185, 185, 185, 0.8);
-	margin-bottom: 6em;
 }
 
 .tiles h2 {
