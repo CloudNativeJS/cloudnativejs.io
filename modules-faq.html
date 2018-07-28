@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<script src="https://www.w3schools.com/lib/w3data.js"></script>
-<div w3-include-html="./tracking.html"></div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122616711-2"></script>
 <script>
-    w3IncludeHTML();
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('set', 'anonymizeIp', true);
+  gtag('config', 'UA-122616711-2');
 </script>
 
 <head>
