@@ -35,10 +35,6 @@ footer .ibm-columns {
 	font-weight: 600;
 }
 
-.title h2 img {
-	max-width: 95vw;
-}
-
 .title h3 {
         font-size: 1.2em;
         text-align: center;
@@ -55,6 +51,11 @@ footer .ibm-columns {
 	font-weight: 500;
 	line-height: 20px;
 
+}
+
+.title img_header {
+	width: 600px;
+	max-width: 60%;
 }
 
 .resource-title {
