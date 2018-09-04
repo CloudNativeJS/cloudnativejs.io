@@ -163,3 +163,19 @@ footer .ibm-columns {
   box-shadow: 0 0.5px 2px #5f5757;
   transform: translateY(1px);
 }
+
+.ibm-twitter-link::before {
+	color: #5AAAFA;
+	position: relative;
+	vertical-align: middle;
+}
+
+.ibm-github-link::before {
+	color: #734098;
+	position: relative;
+	vertical-align: middle;
+}
+
+.icon-vertical-align {
+	vertical-align: middle;
+}	
