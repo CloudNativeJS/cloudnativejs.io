@@ -4,7 +4,10 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122616711-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
   gtag('js', new Date());
   gtag('set', 'anonymizeIp', true);
   gtag('config', 'UA-122616711-2');
@@ -23,6 +26,19 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" media="screen and (max-width: 1000px)" href="css/mobile.css">
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "CloudNativeJS",
+      "url": "https://www.cloudnativejs.io/",
+      "logo": "https://www.cloudnativejs.io/assets/cloudnative-header.svg",
+      "sameAs": [
+        "https://twitter.com/cloudnativejs",
+        "https://github.com/cloudnativejs"
+      ]
+    }
+  </script>
 </head>
 
 <body>
@@ -51,7 +67,7 @@
 
       <a href="http://github.com/CloudNativeJS/docker">
         <div class="tile button">
-          <img src="assets/docker-vertical.png" width="120px" alt="Docker logo"/>
+          <img src="assets/docker-vertical.png" width="120px" alt="Docker logo" />
           <h3>Docker Files</h3>
           <p>Intergrating your Node.js project with Docker is easy.</p>
         </div>
@@ -59,8 +75,8 @@
 
       <a href="http://github.com/CloudNativeJS/helm">
         <div class="tile button">
-          <img src="assets/kubernetes-logo.svg" width="80px" alt="Kubernetes logo"/>
-          <img src="assets/kubernetes-name.svg" width="120px" alt="Kubernetes title"/>
+          <img src="assets/kubernetes-logo.svg" width="80px" alt="Kubernetes logo" />
+          <img src="assets/kubernetes-name.svg" width="120px" alt="Kubernetes title" />
           <h3>Kubernetes Helm Charts</h3>
           <p>Deploy easily to a cluster for highly-scalable applications.</p>
         </div>
@@ -68,7 +84,7 @@
 
       <a href="http://github.com/CloudNativeJS/cloud-health-connect">
         <div class="tile button">
-          <img src="assets/healthcheck-logo.png" width="105px" alt="Health Check image"/>
+          <img src="assets/healthcheck-logo.png" width="105px" alt="Health Check image" />
           <h3>Health Checks</h3>
           <p>Lifecycle reporting and auto-restart for your Node.js application.</p>
         </div>
@@ -76,7 +92,7 @@
 
       <a href="http://github.com/CloudNativeJS/appmetrics-zipkin">
         <div class="tile button">
-          <img src="assets/opentracing-logo.png" width="135px" alt="OpenTracing logo"/>
+          <img src="assets/opentracing-logo.png" width="135px" alt="OpenTracing logo" />
           <h3>OpenTracing with Zipkin</h3>
           <p>Track requests across your distributed micro-services.</p>
         </div>
@@ -120,8 +136,7 @@
 
       <div class="ibm-columns ibm-small">
         <div class="ibm-col-6-4">
-          Node.js is a trademark of Joyent, Inc. and is used with its permission. We are not endorsed by or
-          affiliated with Joyent.
+          Node.js is a trademark of Joyent, Inc. and is used with its permission. We are not endorsed by or affiliated with Joyent.
         </div>
         <div class="ibm-col-6-2 ibm-right">
           <span>Sponsored by:</span>
