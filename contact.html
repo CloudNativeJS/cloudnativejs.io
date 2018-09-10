@@ -4,7 +4,10 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122616711-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
   gtag('js', new Date());
   gtag('set', 'anonymizeIp', true);
   gtag('config', 'UA-122616711-2');
@@ -21,6 +24,19 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/document.css">
   <link rel="stylesheet" media="screen and (max-width: 1000px)" href="css/mobile-document.css">
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "CloudNativeJS",
+      "url": "https://www.cloudnativejs.io/",
+      "logo": "https://www.cloudnativejs.io/assets/cloudnative-header.svg",
+      "sameAs": [
+        "https://twitter.com/cloudnativejs",
+        "https://github.com/cloudnativejs"
+      ]
+    }
+  </script>
 </head>
 
 <body>

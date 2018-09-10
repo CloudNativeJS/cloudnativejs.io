@@ -4,7 +4,10 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122616711-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
   gtag('js', new Date());
   gtag('set', 'anonymizeIp', true);
   gtag('config', 'UA-122616711-2');
@@ -21,6 +24,19 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/document.css">
   <link rel="stylesheet" media="screen and (max-width: 1000px)" href="css/mobile-document.css">
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "CloudNativeJS",
+      "url": "https://www.cloudnativejs.io/",
+      "logo": "https://www.cloudnativejs.io/assets/cloudnative-header.svg",
+      "sameAs": [
+        "https://twitter.com/cloudnativejs",
+        "https://github.com/cloudnativejs"
+      ]
+    }
+  </script>
 </head>
 
 <body>
@@ -33,34 +49,37 @@
     Whilst <a href="https://nodejs.org/en/user-survey-report/#tab20_5">almost half</a> are using Docker, only <a href=" https://evansdata.com/reports/viewRelease.php?reportID=27
       ">21%</a> of developers are building “Cloud Native” applications, and just <a href="https://nodejs.org/en/user-survey-report/#tab20_5
       ">12%</a> are using container orchestration technologies like Kubernetes.
-		</p>
-		<p>
-		CloudNativeJS is an open source community project that aims to provide best-practices, assets and tools to make it easier to get started building enterprise-grade, Cloud Native Node.js applications. These are not just cloud-hosted, but integrate with the <a href="http://cncf.io ">Cloud Native Computing Foundation (CNCF)</a> open source technologies and exploit the full potential that cloud platforms provide.
-		</p>
+  </p>
+  <p>
+    CloudNativeJS is an open source community project that aims to provide best-practices, assets and tools to make it easier to get started building enterprise-grade, Cloud Native Node.js applications. These are not just cloud-hosted, but integrate with
+    the <a href="http://cncf.io ">Cloud Native Computing Foundation (CNCF)</a> open source technologies and exploit the full potential that cloud platforms provide.
+  </p>
 
-		<h2>CloudNativeJS Assets.</h2>
+  <h2>CloudNativeJS Assets.</h2>
 
-		<p>The CloudNativeJS project currently provides the following, backed by the <a href="http://github.com/CloudNativeJS ">CloudNativeJS</a> repository on GitHub. This set is expected to extend over time to include not just a wider set of CNCF technologies, but to also include DevOps best practices.
+  <p>The CloudNativeJS project currently provides the following, backed by the <a href="http://github.com/CloudNativeJS ">CloudNativeJS</a> repository on GitHub. This set is expected to extend over time to include not just a wider set of CNCF technologies,
+    but to also include DevOps best practices.
 
-			<h3><a href="http://modules.cloudnativejs.io ">Node.js Module Insights</a></h3>
-			<p>
-			For a core set of commonly used or specifically cloud-native technologies, including those provided by this project, CloudNativeJS’s <a href="http://modules.cloudnativejs.io ">module insights</a> constantly runs testing, verification and analysis against all current LTS versions of Node.js, across a wide set of operating systems and architectures. Module insights additionally checks and reports code coverage and verifies the license contained in the module and all of its dependencies.
-			</p>
-			<p>
-			This allows application developers to easily and consistently view the state of a range of modules across the platforms that they use, and for the CloudNativeJS community to work with module owners where there are test failures to get those resolved quickly.
-			</p>
-			</p>
-			The set of modules analysed is intended to expand over time, based on feedback and requests from the community and module owners. See <a href="#contributing">Contributing to the CloudNativeJS Community</a> below.
-			</p>
+    <h3><a href="http://modules.cloudnativejs.io ">Node.js Module Insights</a></h3>
+    <p>
+      For a core set of commonly used or specifically cloud-native technologies, including those provided by this project, CloudNativeJS’s <a href="http://modules.cloudnativejs.io ">module insights</a> constantly runs testing, verification and analysis
+      against all current LTS versions of Node.js, across a wide set of operating systems and architectures. Module insights additionally checks and reports code coverage and verifies the license contained in the module and all of its dependencies.
+    </p>
+    <p>
+      This allows application developers to easily and consistently view the state of a range of modules across the platforms that they use, and for the CloudNativeJS community to work with module owners where there are test failures to get those resolved quickly.
+    </p>
+  </p>
+  The set of modules analysed is intended to expand over time, based on feedback and requests from the community and module owners. See <a href="#contributing">Contributing to the CloudNativeJS Community</a> below.
+  </p>
 
-			<h3><a href="http://github.com/CloudNativeJS/ModuleLTS ">Node.js Module LTS Policy</a></h3>
-			<p>
-			The CloudNativeJS project also provides a "<a href="http://github.com/CloudNativeJS/ModuleLTS">Module LTS Policy</a>" based on the LTS policy for Node.js itself. This policy is designed to provide clarity to both module owners and module consumers
+  <h3><a href="http://github.com/CloudNativeJS/ModuleLTS ">Node.js Module LTS Policy</a></h3>
+  <p>
+    The CloudNativeJS project also provides a "<a href="http://github.com/CloudNativeJS/ModuleLTS">Module LTS Policy</a>" based on the LTS policy for Node.js itself. This policy is designed to provide clarity to both module owners and module consumers
     around how long essential fixes should be provided on previous major versions once a new major version has been released.
   </p>
   <p>
-    This has been adopted for all modules provided by the CloudNativeJS project, as well as those provided from a growing list of other module owners. Eventually it is hoped that this approach will become the Node.js community standard for any module
-    that wishes to provide an LTS policy, making the meaning of Node.js Module LTS consistent across modules.
+    This has been adopted for all modules provided by the CloudNativeJS project, as well as those provided from a growing list of other module owners. Eventually it is hoped that this approach will become the Node.js community standard for any module that
+    wishes to provide an LTS policy, making the meaning of Node.js Module LTS consistent across modules.
   </p>
 
   <h3><a href="http://github.com/CloudNativeJS/docker">Template Dockerfiles</a></h3>
@@ -83,7 +102,8 @@
   <h3><a href="http://github.com/CloudNativeJS/appmetrics-prometheus">Prometheus Monitoring</a></h3>
   <p>
     The “<a href="http://github.com/CloudNativeJS/appmetrics-prometheus">appmetrics-prometheus</a>” repository provides an NPM module for collecting metric data from your application. The metrics gathered range from resource metrics such as CPU and memory,
-    to application level metrics such as HTTP request responsiveness. These are then exposed as an application endpoint, and through a configuration in the Helm charts, the metrics are automatically collected by a deployment of the Prometheus open source monitoring project.
+    to application level metrics such as HTTP request responsiveness. These are then exposed as an application endpoint, and through a configuration in the Helm charts, the metrics are automatically collected by a deployment of the Prometheus open source
+    monitoring project.
   </p>
 
 
@@ -93,29 +113,29 @@
     and applications. The tracking data is then sent to a deployment of the Zipkin open source request tracking project.
   </p>
 
+  <p>
+    <a name="contributing"></a>
+    <h2>Contributing to the CloudNativeJS Community</h2>
     <p>
-      <a name="contributing"></a>
-      <h2>Contributing to the CloudNativeJS Community</h2>
-      <p>
-        Discussion, feedback and contributions to the CloudNativeJS community are welcomed, and can be done through various channels:
-        <ul>
-          <li>The #cloudnative channel on <a href="http://node-js.slack.com">node-js.slack.com</a></li>
-          <li>The community project on GitHub: <a href="http://github.com/cloudnativejs/community">github.com/cloudnativejs/community</a></li>
-          <li>The individual projects themselves on <a href="http://github.com/cloudnativejs">github.com/cloudnativejs</a></li>
-        </ul>
-      </p>
-      <p>
-        Please note and adhere to the Code of Conduct when contributing to CloudNativeJS.
-      </p>
+      Discussion, feedback and contributions to the CloudNativeJS community are welcomed, and can be done through various channels:
+      <ul>
+        <li>The #cloudnative channel on <a href="http://node-js.slack.com">node-js.slack.com</a></li>
+        <li>The community project on GitHub: <a href="http://github.com/cloudnativejs/community">github.com/cloudnativejs/community</a></li>
+        <li>The individual projects themselves on <a href="http://github.com/cloudnativejs">github.com/cloudnativejs</a></li>
+      </ul>
+    </p>
+    <p>
+      Please note and adhere to the Code of Conduct when contributing to CloudNativeJS.
+    </p>
 
-      <h2>Code of Conduct</h2>
-      <p>The CloudNativeJS project adopts the <a href="https://www.contributor-covenant.org">Contributor Covenant</a> Code of Conduct. For more details, see the full <a href="https://github.com/CloudNativeJS/community/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a>.
-      </p>
+    <h2>Code of Conduct</h2>
+    <p>The CloudNativeJS project adopts the <a href="https://www.contributor-covenant.org">Contributor Covenant</a> Code of Conduct. For more details, see the full <a href="https://github.com/CloudNativeJS/community/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a>.
+    </p>
 
-      <h2>License and Copyright</h2>
-      <p>
-        All repositories under the CloudNativeJS project use an Apache 2.0 license, and copyright remains with the contributors.
-      </p>
+    <h2>License and Copyright</h2>
+    <p>
+      All repositories under the CloudNativeJS project use an Apache 2.0 license, and copyright remains with the contributors.
+    </p>
 
 </body>
 
