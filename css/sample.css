@@ -34,8 +34,9 @@ header,
 html,
 body,
 header,
-.intro-2 {
+.modules {
     height: 700px;
+    background-color: #92B6B1;
 }
 
 .top-nav-collapse {
