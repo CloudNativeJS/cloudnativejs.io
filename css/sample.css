@@ -1,13 +1,59 @@
+.arrow {
+  box-sizing: border-box;
+  height: 5vw;
+  width: 5vw;
+  border-style: solid;
+  border-color: rgb(89,101,111);
+  border-width: 0px 2px 2px 0px;
+  transform: rotate(45deg);
+  transition: border-width 150ms ease-in-out;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 5vw;
+  left: 50%
+}
+
+.arrow:hover {
+  border-bottom-width: 4px;
+  border-right-width: 4px;
+}
+
+#full {
+  height: 100vh;
+  background-color: #256347;
+}
+
 html,
 body,
 header,
 .jarallax {
-  height: 100vh;
+    height: 100vh;
+    background: #eafdf8;
 }
 
 html,
 body,
 header,
 .intro-2 {
-  height: 700px;
+    height: 700px;
+}
+
+.top-nav-collapse {
+    background-color: #476A6F !important;
+    opacity: .9;
+}
+
+.navbar:not(.top-nav-collapse) {
+    background:  #476A6F !important;
+    opacity: .9;
+}
+
+@media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #476A6F !important;
+    }
+}
+
+.text-secondary {
+  color: white !important;
 }
