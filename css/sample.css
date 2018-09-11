@@ -10,7 +10,7 @@
   margin: 0 auto;
   position: absolute;
   bottom: 5vw;
-  left: 50%
+  left: 47.5vw;
 }
 
 .arrow:hover {
@@ -23,7 +23,7 @@
   background-color: #256347;
 }
 
-html,
+/* html,
 body,
 header,
 .jarallax {
@@ -37,6 +37,28 @@ header,
 .modules {
     height: 700px;
     background-color: #92B6B1;
+} */
+
+.jarallax {
+  height: 100vh;
+}
+
+section {
+  padding: 1vh;
+}
+
+#modules {
+  background-color: #92B6B1;
+  /* height: 38vh; */
+  height: 120vh;
+}
+
+#modules > .container {
+  margin-top: 5vh;
+}
+
+#modules img {
+  width: 45vw;
 }
 
 .top-nav-collapse {
