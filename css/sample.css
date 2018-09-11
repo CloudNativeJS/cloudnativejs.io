@@ -80,3 +80,8 @@ section {
 .text-secondary {
   color: white !important;
 }
+
+.fa {
+  color: white;
+  padding-left: 0.5em;
+}
