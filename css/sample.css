@@ -1,3 +1,7 @@
+a {
+  text-decoration: none !important;
+}
+
 .arrow {
   box-sizing: border-box;
   height: 5vw;
@@ -77,11 +81,20 @@ section {
     }
 }
 
-.text-secondary {
+.nav-brand, .text-secondary {
+  color: #dadada !important;
+}
+
+.nav-brand a:hover, .nav-item a:hover {
   color: white !important;
 }
 
 .fa {
-  color: white;
+  color: #dadada;
+  text-decoration: none;
   padding-left: 0.5em;
+}
+
+.fa:hover {
+  color: white;
 }
