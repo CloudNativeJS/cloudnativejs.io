@@ -1,5 +1,10 @@
+body {
+  padding-top: 4em;
+}
+
 a {
   text-decoration: none !important;
+  /* color: red !important; */
 }
 
 .arrow {
@@ -8,7 +13,7 @@ a {
   width: 5vw;
   border-style: solid;
   border-color: rgb(89,101,111);
-  border-width: 0px 2px 2px 0px;
+  border-width: 0px 4px 4px 0px;
   transform: rotate(45deg);
   transition: border-width 150ms ease-in-out;
   margin: 0 auto;
@@ -18,83 +23,68 @@ a {
 }
 
 .arrow:hover {
-  border-bottom-width: 4px;
-  border-right-width: 4px;
+  border-width: 0px 8px 8px 0px;
 }
 
-#full {
-  height: 100vh;
-  background-color: #256347;
-}
-
-/* html,
-body,
-header,
-.jarallax {
-    height: 100vh;
-    background: #eafdf8;
-}
-
-html,
-body,
-header,
-.modules {
-    height: 700px;
-    background-color: #92B6B1;
-} */
-
-.jarallax {
+#landing {
   height: 100vh;
 }
 
 section {
-  padding: 1vh;
+  padding: 2em 1em;
 }
 
-#modules {
+#modules, #zipkin, #docker {
   background-color: #b3d4cf;
-  /* height: 38vh; */
-  height: 120vh;
 }
 
-#modules > .container {
-  margin-top: 5vh;
+#modules img, #docker img, #health img, #kubernetes img, #zipkin img, #prometheus img{
+  margin: 0 auto;
+  width: 90%;
 }
 
-#modules img {
-  width: 45vw;
+#kubernetes img, #prometheus img, #zipkin img, #health img {
+  width: 40%;
 }
 
-.top-nav-collapse {
-    background-color: #476A6F !important;
-    opacity: .9;
+.navbar, footer {
+  background:  #476A6F !important;
+  opacity: .9;
 }
 
-.navbar:not(.top-nav-collapse) {
-    background:  #476A6F !important;
-    opacity: .9;
+footer {
+  padding: 1em 0.5em;
+  color: #dadada;
 }
 
-@media (max-width: 768px) {
-    .navbar:not(.top-nav-collapse) {
-        background: #476A6F !important;
-    }
+footer p {
+  text-align: center;
+  margin: 0;
 }
 
-.nav-brand, .text-secondary {
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+.off-white-text, .nav-item a {
   color: #dadada !important;
 }
 
-.nav-brand a:hover, .nav-item a:hover {
+.off-white-text:hover, .nav-item a:hover {
   color: white !important;
 }
 
-.fa {
-  color: #dadada;
-  text-decoration: none;
-  padding-left: 0.5em;
+.navbar-toggler-icon {
+  color: #dadada !important;
 }
 
-.fa:hover {
+.fab, .fas, .far {
+  color: #dadada;
+  text-decoration: none;
+  margin-left: 0.5em;
+}
+
+.fab:hover {
   color: white;
 }
