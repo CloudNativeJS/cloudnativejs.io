@@ -9,6 +9,7 @@ async function populatePosts() {
   const posts = await response.json();
 
   for (let post of posts) {
+    console.log(post);
     const postElement = document.importNode(post_template.content, true);
 
     const id = post.title.rendered.replace(/ +/g, "-").replace(/&nbsp;/g, '-').toLowerCase().replace(/[`~!@#$%^&*()_|+\=?;:'",.<>\{\}\[\]\\\/]/gi, '');
@@ -28,7 +29,15 @@ async function populatePosts() {
     fb_button.src = fb_link
 
     const postDate = postElement.querySelector('h6');
-    postDate.innerHTML = post.date_gmt;
+    const date = new Date(post.date_gmt);
+    const day = date.getDate();
+    const month = date.getMonth() + 1;
+    const year = date.getFullYear();
+    let hours = date.getHours();
+    if (hours < 10) hours = '0' + hours;
+    let minutes = date.getMinutes();
+    if (minutes < 10) minutes = '0' + minutes;
+    postDate.textContent = `${day}/${month}/${year} ${hours}:${minutes}`;
 
     const postContent = postElement.querySelector('div');
     postContent.innerHTML = post.content.rendered;
