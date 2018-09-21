@@ -1,0 +1,18 @@
+body {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+#blogs {
+  list-style-type: none;
+  padding: 0;
+}
+
+#blogs > li {
+  margin-bottom: 0.5em;
+  border-bottom: 2px solid black;
+}
+
+#blogs img {
+  display: none;
+}
