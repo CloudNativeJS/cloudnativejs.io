@@ -1,181 +1,98 @@
-html, body {
-  font-family: IBM Plex Sans, sans-serif;
-  height: 100%;
-  background-color: #f4f4f4;
+body {
+  padding-top: 4em;
 }
 
-/* Safari only */
-@media not all and (min-resolution:.001dpcm) { @media {
-  body {
-    padding-bottom: 9.5em;
-  }
-}}
+a {
+  text-decoration: none !important;
+  /* color: red !important; */
+}
 
-.container {
-	max-width: 1200px;
-	width: 100%;
-	margin: auto;
+.arrow {
+  box-sizing: border-box;
+  height: 5vw;
+  width: 5vw;
+  border-style: solid;
+  border-color: rgb(89,101,111);
+  border-width: 0px 4px 4px 0px;
+  transform: rotate(45deg);
+  transition: border-width 150ms ease-in-out;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 5vw;
+  left: 47.5vw;
+}
+
+.arrow:hover {
+  border-width: 0px 8px 8px 0px;
+}
+
+#landing {
+  height: 100vh;
+}
+
+#landing h3 {
+  margin-bottom: .5em;
+}
+
+#landing p {
+  font-size: 1.25em;
+}
+
+section {
+  padding: 2em 1em;
+}
+
+#modules, #zipkin, #docker {
+  background-color: #b3d4cf;
+}
+
+#modules img, #docker img, #health img, #kubernetes img, #zipkin img, #prometheus img{
+  margin: 0 auto;
+  width: 90%;
+}
+
+#kubernetes img, #prometheus img, #zipkin img, #health img {
+  width: 40%;
+}
+
+.navbar, footer {
+  background:  #476A6F !important;
+  opacity: .9;
 }
 
 footer {
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 100%;
+  padding: 1em 0.5em;
+  color: #dadada;
 }
 
-footer .ibm-columns {
-	padding-top: 10px;
+footer p {
+  text-align: center;
+  margin: 0;
 }
 
-.title h2 {
-	font-size: 2.6em;
-	text-align: center;
-	margin: 40px 0 10px 0;
-	font-weight: 600;
+.vertical-center {
+  display: flex;
+  align-items: center;
 }
 
-.title h3 {
-        font-size: 1.2em;
-        text-align: center;
-        margin: 10px 0 40px 0;
-        font-weight: 550;
-        color: #666666;
+.off-white-text, .nav-item a {
+  color: #dadada !important;
 }
 
-.title h4 {
-	text-align: justify;
-	width: 60%;
-	margin: auto;
-	padding-bottom: 20px;
-	font-weight: 500;
-	line-height: 20px;
-
+.off-white-text:hover, .nav-item a:hover {
+  color: white !important;
 }
 
-.img_header {
-	width: 600px;
-	max-width: 60%;
+.navbar-toggler-icon {
+  color: #dadada !important;
 }
 
-.resource-title {
-	text-align: center;
-	font-size: 2.0em;
-	font-weight: 600;
-	margin-bottom: 20px;
+.fab, .fas, .far {
+  color: #dadada;
+  text-decoration: none;
+  margin-left: 0.5em;
 }
 
-.tiles {
-	background-color: #2d74da;
-	width: 100%;
-	margin: 0;
-	box-shadow: 0px 0px 15px rgba(185, 185, 185, 0.8);
-  margin-bottom: 6em;
+.fab:hover, .far:hover {
+  color: white;
 }
-
-.tiles h2 {
-	text-align: center;
-	font-weight: 600;
-	font-size: 2em;
-	padding-bottom: 20px;
-}
-
-.tiles a {
-	text-decoration: none;
-}
-
-.tiles-section {
-	 display: flex;
-  flex-flow: wrap;
-  justify-content: space-around;
-		width: 1000px;
-		margin: auto;
-		border-radius: 20px;
-		padding: 20px;
-}
-
-.tile {
-	border: 1px solid black;
-	background-color: white;
-	border-radius: 15px;
-	width: 280px;
-	height: 200px;
-	margin: 5px 5px;
-	padding: 10px 10px;
-	box-shadow: 0px 0px 15px rgba(185, 185, 185, 0.8);
-}
-
-.tile:hover {
-	box-shadow: 0px 0px 18px rgba(70, 70, 70, 0.8);
-}
-
-.tile img {
-	text-align: center;
-	margin: auto;
-	display: block;
-	margin-bottom: 5px;
-}
-
-.tile h3 {
-	text-align: center;
-	margin-top: 10px;
-	font-weight: 600;
-	font-size: 1.1em;
-}
-
-.tile p {
-	text-align: center;
-	margin-top: 30px;
-	line-height: 20px;
-}
-
-.contact {
-	text-align: center;
-	font-size: 1.8em;
-	font-weight: 600;
-	margin-top: 30px;
-	margin-bottom: 30px;
-}
-
-.footer {
-	text-align: center;
-	margin-top: 20px;
-	position: fixed;
-}
-
-.footer h2 {
-	font-size: 1.4em;
-	margin-bottom: 10px;
-	font-weight: 500;
-}
-
-.footer h3 {
-	font-weight: 300;
-	font-size: 1.6em;
-	margin-bottom: 20px;
-}
-
-.button:focus, .button:active {
-  outline:0;
-}
-
-.button:active {
-  box-shadow: 0 0.5px 2px #5f5757;
-  transform: translateY(1px);
-}
-
-.ibm-twitter-link::before {
-	color: #5AAAFA;
-	position: relative;
-	vertical-align: middle;
-}
-
-.ibm-github-link::before {
-	color: #734098;
-	position: relative;
-	vertical-align: middle;
-}
-
-.icon-vertical-align {
-	vertical-align: middle;
-}	

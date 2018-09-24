@@ -2,13 +2,10 @@
 <html lang="en" dir="ltr">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122616711-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
-  gtag('set', 'anonymizeIp', true);
-  gtag('config', 'UA-122616711-2');
-</script>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+<script w3-include-html="partials/google-analytics.html"></script>
+<script type="application/ld+json" w3-include-html="partials/structured-data.html"></script>
 
 <head>
   <meta charset="utf-8">
@@ -17,19 +14,23 @@
   <title>Accessibility</title>
   <link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16" />
-  <link href=“https://fonts.googleapis.com/css?family=IBM+Plex+Sans” rel=“stylesheet”>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/document.css">
-  <link rel="stylesheet" media="screen and (max-width: 1000px)" href="css/mobile-document.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/main.css">
 </head>
+<nav class="navbar navbar-expand-lg fixed-top scrolling-navbar" w3-include-html="partials/header.html"></nav>
 
 <body>
-  <h1>Accessibility</h1>
+  <div class="container">
+    <h1>Accessibility</h1>
 
-  <p>
-    If you have a problem with the accessibility of CloudNativeJS please send us feedback <a href="mailto:jimmail@uk.ibm.com?Subject=accessibility">jimmail@uk.ibm.com</a>. For more general information please read the <a href="http://www.ibm.com/accessibility/us/en/?lnk=flg-acce-usen">IBM Accessibility</a>    page.
-  </p>
-
+    <p>
+      If you have a problem with the accessibility of CloudNativeJS please send us feedback <a href="mailto:jimmail@uk.ibm.com?Subject=accessibility">jimmail@uk.ibm.com</a>. For more general information please read the <a href="http://www.ibm.com/accessibility/us/en/?lnk=flg-acce-usen">IBM Accessibility</a>      page.
+    </p>
+  </div>
 </body>
+<script>
+  w3.includeHTML();
+</script>
 
 </html>
