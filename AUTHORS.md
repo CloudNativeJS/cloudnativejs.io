@@ -1,8 +1,8 @@
-# Authors
+# Authors ordered by first contribution
 
-- Bethany Griggs (https://github.com/BethGriggs)
 - Chris Bailey (https://github.com/seabaylea)
-- David Harris (https://github.com/sympatheticmoose)
+- Thomas Leah (https://github.com/tomleah)
+- Bethany Griggs (https://github.com/BethGriggs)
 - George Adams (https://github.com/gdams)
+- David Harris (https://github.com/sympatheticmoose)
 - Neeraj Laad (https://github.com/neeraj-laad)
-- Thomas Leah (https://github.com/Tomleah)
