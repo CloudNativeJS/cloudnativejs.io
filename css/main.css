@@ -16,17 +16,28 @@ a {
   transform: rotate(45deg);
   transition: border-width 150ms ease-in-out;
   margin: 0 auto;
-  position: absolute;
-  bottom: 5vw;
+  /* position: absolute;
+  bottom: 25px; */
   left: 47.5vw;
+}
+
+@media only screen and (max-width: 1000px) {
+  .arrow {
+    display: none;
+  }
 }
 
 .arrow:hover {
   border-width: 0px 8px 8px 0px;
 }
 
+section {
+  padding: 2em 1em;
+}
+
 #landing {
-  height: 100vh;
+  min-height: 100vh;
+  padding: 0 0 2em 0;
 }
 
 #landing h3 {
@@ -37,9 +48,6 @@ a {
   font-size: 1.25em;
 }
 
-section {
-  padding: 2em 1em;
-}
 
 #modules, #zipkin, #docker {
   background-color: #b3d4cf;
