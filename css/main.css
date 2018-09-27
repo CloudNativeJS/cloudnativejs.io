@@ -46,12 +46,12 @@ section {
   font-size: 1.25em;
 }
 
-
 #modules, #zipkin, #docker {
   background-color: #b3d4cf;
 }
 
 #modules img, #docker img, #health img, #kubernetes img, #zipkin img, #prometheus img{
+  padding: 1em 0.5em;
   margin: 0 auto;
   width: 90%;
 }
