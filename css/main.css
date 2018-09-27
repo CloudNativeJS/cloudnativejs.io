@@ -47,7 +47,14 @@ section {
 }
 
 #modules, #zipkin, #docker {
+  padding-top: 3em;
+  padding-bottom: 3em;
   background-color: #b3d4cf;
+}
+
+#health, #kubernetes, #prometheus{
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 
 #modules img, #docker img, #health img, #kubernetes img, #zipkin img, #prometheus img{
