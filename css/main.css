@@ -115,3 +115,7 @@ footer p {
 .fab:hover, .far:hover {
   color: white;
 }
+
+.aligncenter {
+  text-align: center;
+}

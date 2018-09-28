@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122616711-2"></script>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+<script w3-include-html="partials/google-analytics.html"></script>
+<script type="application/ld+json" w3-include-html="partials/structured-data.html"></script>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Cloud Native Node.js</title>
+	<link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/blogs.css">
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8" integrity="sha256-6y5jbSSh8/ddSxlEswPdRpS18tkotp/Ip23AiKU7GrQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!--Main Navigation-->
+	<!--Navbar-->
+	<nav class="navbar navbar-expand-lg fixed-top scrolling-navbar" w3-include-html="partials/header.html"></nav>
+	<ul id="blogs"></ul>
+	<template id="post-template">
+    <li>
+      <h2></h2>
+			<h6></h6>
+      <div></div>
+			<iframe id="fb-button" src="" width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+			<iframe id="tweet-button" allowtransparency="true" frameborder="0" scrolling="no" src="" style="width:110px; height:20px;"></iframe>
+		</li>
+  </template>
+	<div id="navigation-buttons">
+		<div id="paging-buttons">
+			<a id="paging-previous" class="btn off-white-text">Previous</a>
+			<a id="paging-next" class="btn off-white-text">Next</a>
+		</div>
+		<a id="read-more-button" href="./blogs.html" class="btn off-white-text">Read more blogs</a>
+	</div>
+	<script src="blogs.js"></script>
+	<script>
+		w3.includeHTML();
+	</script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
