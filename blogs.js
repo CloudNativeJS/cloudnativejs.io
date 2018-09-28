@@ -33,7 +33,7 @@ async function getPosts() {
     pagingNext.href = `./blogs.html?page=${PAGE + 1}`
   }
 
-  url = url += `?per_page=${MAX_POSTS}&page=${PAGE}`;
+  url += `?per_page=${MAX_POSTS}&page=${PAGE}`;
   response = await fetch(url);
 
   if (response.status !== 200) console.log('Error: Could not load posts!');
@@ -75,17 +75,7 @@ function formatPosts(posts) {
     fb_button.src = fb_link
 
     const postDate = postElement.querySelector('h6');
-    const date = new Date(post.date_gmt);
-    let day = date.getDate();
-    if (day < 10) day = '0' + day;
-    let month = date.getMonth() + 1;
-    if (month < 10) month = '0' + month;
-    const year = date.getFullYear();
-    let hours = date.getHours();
-    if (hours < 10) hours = '0' + hours;
-    let minutes = date.getMinutes();
-    if (minutes < 10) minutes = '0' + minutes;
-    postDate.textContent = `${day}/${month}/${year} ${hours}:${minutes}`;
+		postDate.textContent = moment(new Date(post.date_gmt)).format('Do MMMM YYYY');
 
     const postContent = postElement.querySelector('div');
     postContent.innerHTML = post.content.rendered;
