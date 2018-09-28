@@ -67,11 +67,11 @@ function formatPosts(posts) {
     postTitle.id = id;
 
     const tweet_button = postElement.getElementById('tweet-button')
-    const tweet_link = 'http://platform.twitter.com/widgets/tweet_button.html?text=' + post.title.rendered.replace(/&nbsp;/g, '%20').replace(/ +/g, '%20') + '.&url=https://cloudnativejs.io/blogs.html%23' + id + '&hashtags=cloudnativejs&amp;count=horizontal';
+    const tweet_link = 'https://platform.twitter.com/widgets/tweet_button.html?text=' + post.title.rendered.replace(/&nbsp;/g, '%20').replace(/ +/g, '%20') + '.&url=https://www.cloudnativejs.io/blogs.html%23' + id + '&hashtags=cloudnativejs&amp;count=horizontal';
     tweet_button.src = tweet_link
 
     const fb_button = postElement.getElementById('fb-button')
-    const fb_link = 'https://www.facebook.com/plugins/share_button.php?href=https://cloudnativejs.io/blogs.html%23' + id + '&layout=button&size=small&mobile_iframe=true&appId=722472437961274&width=78&height=20';
+    const fb_link = 'https://www.facebook.com/plugins/share_button.php?href=https://www.cloudnativejs.io/blogs.html%23' + id + '&layout=button&size=small&mobile_iframe=true&appId=722472437961274&width=78&height=20';
     fb_button.src = fb_link
 
     const postDate = postElement.querySelector('h6');
