@@ -1,4 +1,4 @@
-let url = `https://public-api.wordpress.com/wp/v2/sites/cloudnativejs.wordpress.com/posts`;
+let url = `https://public-api.wordpress.com/wp/v2/sites/cloudnativejs.wordpress.com/posts?_embed`;
 const MAX_POSTS = 5; // Number of posts per page.
 let urlParams = new URLSearchParams(window.location.search);
 let PAGE = Number(urlParams.get('page')) || 1;
@@ -6,7 +6,7 @@ const blogsList = document.getElementById('blogs');
 const postTemplate = document.getElementById('post-template');
 
 async function getPosts() {
-  let response = await fetch(url + '?per_page=1&page=1');
+  let response = await fetch(url + '&per_page=1&page=1');
   if (response.status !== 200) console.log('Error: Could not load posts!');
   const numPosts = response.headers.get('X-WP-Total');
   const maxPages = Math.ceil(numPosts / MAX_POSTS);
@@ -33,7 +33,7 @@ async function getPosts() {
     pagingNext.href = `./blogs.html?page=${PAGE + 1}`
   }
 
-  url += `?per_page=${MAX_POSTS}&page=${PAGE}`;
+  url += `&per_page=${MAX_POSTS}&page=${PAGE}`;
   response = await fetch(url);
 
   if (response.status !== 200) console.log('Error: Could not load posts!');
@@ -74,8 +74,11 @@ function formatPosts(posts) {
     const fb_link = 'https://www.facebook.com/plugins/share_button.php?href=https://www.cloudnativejs.io/blogs.html%23' + id + '&layout=button&size=small&mobile_iframe=true&appId=722472437961274&width=78&height=20';
     fb_button.src = fb_link
 
-    const postDate = postElement.querySelector('h6');
+    const postDate = postElement.querySelector('.post-date');
 		postDate.textContent = moment(new Date(post.date_gmt)).format('Do MMMM YYYY');
+
+    const postAuthor = postElement.querySelector('.post-author');
+    postAuthor.textContent = `by ${post._embedded.author[0].name}`;
 
     const postContent = postElement.querySelector('div');
     postContent.innerHTML = post.content.rendered;
