@@ -67,3 +67,7 @@ display: none;
 #read-more-button {
   display: none;
 }
+
+.post-date {
+  font-weight: bold;
+}
