@@ -63,8 +63,8 @@
 					</div>
 					<div class="col-lg-6">
 						<h2 class="display-4">Add health checking...</h2>
-						<p>The “cloud-health” and “cloud-health-connect” repositories provide NPM modules for managing and reporting the lifecycle of your application through readiness and liveness endpoints. These are used by Kubernetes to determine whether your application
-							is ready to receive requests, whether it is no-longer “live” and should be automatically restarted, and to handle graceful shutdown when it is requested to stop.</p>
+						<p>When using cloud platforms such as Kubernetes, health-checking enables the cloud platform to determine readiness (is your application is ready to receive requests), liveness (is your application is live or does it need to be restarted).</p>
+						<p>The ‘cloud-health’ module is a core library that provides health checking and gives you more control over application lifecycle management (startup, running, shutdown). The 'cloud-health-connect' module exposes the health-check information on readiness/liveness endpoints to help the cloud platforms manage your application.</p>
 						<a href="https://github.com/CloudNativeJS/cloud-health-connect/blob/master/README.md#cloud-health-connect" class="btn btn-secondary btn-lg btn-block" target="_blank" role="button">Docs <i class="far fa-file-alt"></i></a>
 						<a href="https://github.com/CloudNativeJS/cloud-health-connect" class="btn btn-info btn-lg btn-block" target="_blank" role="button">View on GitHub<i class="fab fa-github"></i></a>
 					</div>
