@@ -43,7 +43,7 @@ async function getPosts() {
 }
 
 async function getSinglePost(id) {
-  url += `?slug=${id}`
+  url += `&slug=${id}`
 
   const readMoreButton = document.getElementById('read-more-button');
   readMoreButton.style.display = 'inline';
