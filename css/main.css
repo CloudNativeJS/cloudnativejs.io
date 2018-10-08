@@ -126,3 +126,19 @@ footer p {
 .aligncenter {
   text-align: center;
 }
+
+.btn-secondary {
+  background: #476A6F;
+}
+
+.btn-info {
+  background: #3277d7;
+}
+
+.btn-secondary:hover {
+  background: #405e63;
+}
+
+.btn-info:hover {
+  background: #2f70cc;
+}
