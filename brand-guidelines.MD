@@ -2,7 +2,7 @@
 This is a living document and is intended to grow over time to provide additional guidance as required.
 
 ## Colour Palette
-![Colour Palette](https://github.com/sympatheticmoose/cloudnativejs.io/blob/master/assets/Colour%20Palette.png "Colour Palette")
+![Colour Palette](https://github.com/sympatheticmoose/cloudnativejs.io/blob/master/assets/cnjs-colour-palette.svg "Colour Palette")
 
 ### colour-1
 
