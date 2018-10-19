@@ -29,7 +29,7 @@ a {
   border-width: 0px 8px 8px 0px;
 }
 
-section {
+main section {
   padding: 2em 1em;
 }
 
@@ -141,4 +141,9 @@ footer p {
 
 .btn-info:hover {
   background: #2f70cc;
+}
+
+
+#about section {
+  margin-bottom: 2em;
 }
