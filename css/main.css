@@ -38,6 +38,12 @@ main section {
   padding: 0 0 2em 0;
 }
 
+#landing img {
+  min-width: 50vw;
+  max-width: 90vw;
+  margin: 2em 0;
+}
+
 #landing h3 {
   margin-bottom: .5em;
 }
@@ -68,7 +74,7 @@ main section {
 }
 
 .navbar, footer {
-  background:  #476A6F !important;
+  background:  #103236 !important;
   opacity: .9;
 }
 
