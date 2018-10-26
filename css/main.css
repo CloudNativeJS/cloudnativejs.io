@@ -52,7 +52,7 @@ main section {
   font-size: 1.25em;
 }
 
-#modules, #zipkin, #docker {
+#modules, #zipkin, #docker, #express-gateway {
   padding-top: 3em;
   padding-bottom: 3em;
   background-color: #b3d4cf;
