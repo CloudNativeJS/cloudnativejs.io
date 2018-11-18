@@ -3,11 +3,11 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 426 276" style="enable-background:new 0 0 426 276;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#152935;}
-	.st1{fill:#5A6872;}
-	.st2{fill:#E3ECEC;}
-	.st3{fill:#B8C1C1;}
-	.st4{fill:#2D74DA;}
+	.st0{fill:#2c7780;}
+	.st1{fill:#1d8d9a;}
+	.st2{fill:#103236;}
+	.st3{fill:#f8f8f8;}
+	.st4{fill:#dddbdc;}
 	.st5{fill:#F2F2F2;}
 	.st6{font-family:'IBMPlexSans-Bold';}
 	.st7{font-size:26.4358px;}
@@ -18,9 +18,9 @@
 <g id="Template_Logos_etc">
 	<rect x="11" y="11" class="st0" width="112" height="112"/>
 	<rect x="158" y="11" class="st1" width="112" height="112"/>
-	<rect x="11" y="155" class="st2" width="112" height="112"/>
-	<rect x="158" y="155" class="st3" width="112" height="112"/>
-	<rect x="305" y="11" class="st4" width="112" height="112"/>
+	<rect x="11" y="155" class="st3" width="112" height="112"/>
+	<rect x="158" y="155" class="st4" width="112" height="112"/>
+	<rect x="305" y="11" class="st2" width="112" height="112"/>
 	<text transform="matrix(1 0 0 1 58.1387 75.4424)" class="st5 st6 st7">1</text>
 	<text transform="matrix(1 0 0 1 58.1387 219.4424)" class="st8 st6 st7">4</text>
 	<text transform="matrix(1 0 0 1 206.1387 219.4424)" class="st8 st6 st7">5</text>
