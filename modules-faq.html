@@ -11,17 +11,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Module Insights</title>
-    <link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./assets/styles/main.css">
 </head>
 
 <body>
 
-    <!--Main Navigation-->
-    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar" w3-include-html="partials/header.html"></nav>
+    <nav class="simple-nav">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blogs.html">Blogs</a></li>
+            <span class="social-icons">
+                <li><a href="https://twitter.com/cloudnativejs"<i class="fab fa-twitter" style="font-size:26px"></i></a></li>
+                <li><a href="https://github.com/cloudnativejs"<i class="fab fa-github" style="font-size:26px"></i></a></li>
+                <li><a href="mailto:jimmail@uk.ibm.com"<i class="far fa-envelope" style="font-size:26px"></i></a></li>
+                <li><a href="https://node-js.slack.com/messages/CBV29RX62"<i class="fab fa-slack-hash" style="font-size:26px"></i></a></li>
+            </span>
+        </ul>
+    </nav>
 
     <div class="container">
         <h1>Module Insights</h1>
@@ -59,6 +67,8 @@
                 You can also use the search box at the top right of the table to filter on information in any column. To get in touch with us about this page, or any of the work contained within CloudNativeJS, please see our <a href="https://www.cloudnativejs.io/contact.html">Contact</a>                page.
             </p>
     </div>
+
+    <footer w3-include-html="partials/footer.html"></footer>
 
     <script>
         w3.includeHTML();

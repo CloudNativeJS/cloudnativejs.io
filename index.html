@@ -1,168 +1,158 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-
-<head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122616711-2"></script>
 	<script src="https://www.w3schools.com/lib/w3.js"></script>
 	<script w3-include-html="partials/google-analytics.html"></script>
 	<script type="application/ld+json" w3-include-html="partials/structured-data.html"></script>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Cloud Native Node.js</title>
-	<link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32" />
-	<link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16" />
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" href="./css/main.css">
-</head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <title>Cloud Native Node.js</title>
+  </head>
+  <body>
+    <section id="landing">
+        <div class="landing-inner">
+            <nav>
+                <ul>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/blogs.html">Blogs</a></li>
+                    <span class="social-icons">
+                        <li><a href="https://twitter.com/cloudnativejs"<i class="fab fa-twitter" style="font-size:26px"></i></a></li>
+                        <li><a href="https://github.com/cloudnativejs"<i class="fab fa-github" style="font-size:26px"></i></a></li>
+                        <li><a href="mailto:jimmail@uk.ibm.com"<i class="far fa-envelope" style="font-size:26px"></i></a></li>
+                        <li><a href="https://node-js.slack.com/messages/CBV29RX62"<i class="fab fa-slack-hash" style="font-size:26px"></i></a></li>
+                    </span>
+                </ul>
+            </nav>
+            <div class="container text-center">
+            <img src="./assets/images/cloudnative-logo.svg">
+            <h2>Create Cloud Native Node.js Applications</h2>
+                <p>Nearly all Node.js applications are now deployed to the cloud, but only 12% of these utilize the full potential of modern cloud computing platforms.</p>
+                <p>CloudNativeJS is an open source community project that aims to provide best-practices, assets, and tools to make it easier to integrate open source technologies from the Cloud Native Computing Foundation (CNCF) and build enterprise-grade, cloud native Node.js applications.</p>
+            </div>
+        </div>
+        <div class="landing-nav">
+            <div class="row">
+                <div class="col-md">
+                    <h4>Add to Application</h3>
+                </div>
+                <div class="col-md">
+                    <ul>
+                        <li><a href="#modules">Module Insights</a></li>
+                        <li><a href="#health">Health Checking</a></li>
+                        <li><a href="#opentracing">Open Tracing</a></li>
+                        <li><a href="#prometheus">Prometheus</a></li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <h4>Deploy Application</h3>
+                </div>
+                <div class="col-md">
+                    <ul>
+                        <li><a href="#docker">Docker</a></li>
+                        <li><a href="#kubernetes">Kubernetes</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="modules" class="tech-area">
+        <div class="row align-items-center">
+            <div class="col-md">
+                <h3>Choose your modules...</h3>
+                <p>CloudNativeJS’s Module Insights helps you choose which modules you should depend on in your Enterprise Node.js applications. Module Insights gathers information about popular Node.js modules, including their stability, license, and version information. It also executes a modules' own test suite against all current LTS versions of Node.js across multiple platforms, to determine whether a module is passing its own test suite across the stable major Node.js versions. You can use these test results to determine whether the Node.js module you are selecting is appropriate for your target deployment architecture.</p>
+                <a href="./modules-faq.html" class="btn btn-light">Docs</a>
+                <a href="https://modules.cloudnativejs.io" class="btn btn-primary">Module Insights</a>
+            </div>
+            <div class="col-md text-center">
+                <img class="horizontal-img" src="assets/images/module-insights-macbook.svg">
+            </div>
+        </div>
+    </section>
+    <section id="health" class="tech-area">
+        <div class="row align-items-center">
+            <div class="col-md text-center">
+                <img src="assets/images/healthcheck.svg">
+            </div>
+            <div class="col-md">
+                <h3>Add health checking...</h3>
+                <p>When using cloud platforms such as Kubernetes, health-checking enables the cloud platform to determine readiness (is your application ready to receive requests?) and liveness (is your application live or does it need to be restarted?) of your application.</p>
+                <p>The ‘cloud-health’ module is a core library that provides health checking and gives you more control over application lifecycle management (startup, running, shutdown). The 'cloud-health-connect' module exposes the health-check information on readiness/liveness endpoints to help the cloud platforms manage your application.</p>
+                <a href="https://github.com/CloudNativeJS/cloud-health-connect/blob/master/README.md#cloud-health-connect" class="btn btn-light">Docs</a>
+                <a href="https://github.com/CloudNativeJS/cloud-health-connect" class="btn btn-primary">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+    <section id="opentracing" class="tech-area">
+            <div class="row align-items-center">
+                <div class="col-md">
+                    <h3>Track your requests...</h3>
+                    <p>Track requests as they propagate through distributed services and understand how relationships between these requests influence your application. <a href="http://opentracing.io/">OpenTracing</a> enables vendor neutral instrumentation of distributed applications with minimal effort. See how you can instrument your application with OpenTracing based request tracking with a one-line change.</p>
+                    <a href="https://github.com/CloudNativeJS/appmetrics-zipkin/blob/master/README.md#appmetrics-zipkin" class="btn btn-light">Docs</a>
+                    <a href="https://github.com/CloudNativeJS/appmetrics-zipkin" class="btn btn-primary">View on GitHub</a>
+                </div>
+                <div class="col-md text-center">
+                    <img src="assets/images/opentracing-logo.png">
+                </div>
+            </div>
+    </section>
+    <section id="prometheus" class="tech-area">
+        <div class="row align-items-center">
+            <div class="col-md text-center">
+                <img src="assets/images/prometheus-logo.svg">
+            </div>
+            <div class="col-md">
+                <h3>Power your metrics...</h3>
+                <p>Enable powerful monitoring for your distributed application and configure rule-based alerting using <a href="https://prometheus.io/">Prometheus</a> open source project. This is vital for diagnosing problems and ensuring the reliability of your application.</p>
+                <p>The "appmetrics-prometheus" module will collect a wide range of resource-centric (CPU, memory) and application-centric (HTTP request responsiveness) metrics from your application, and then expose them as multi-dimensional time-series data through an application endpoint for Prometheus to scrape and aggregate.</p>
+                <a href="https://github.com/CloudNativeJS/appmetrics-prometheus/blob/master/README.md#appmetrics-prometheus" class="btn btn-light">Docs</a>
+                <a href="https://github.com/CloudNativeJS/appmetrics-prometheus" class="btn btn-primary">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+    <section id="docker" class="tech-area">
+        <div class="row align-items-center">
+            <div class="col-md">
+                <h3>Build your Docker image...</h3>
+                <p>Docker makes it easy to create, deploy, and run applications by using containers. Containers allow a developer to package up an application with everything it needs, ensuring that it runs consistently across Docker enabled machines regardless of any customization.</p>
+                <p>The “docker” repository provides a set of template Dockerfiles that implement the best-practices for building development and production Docker images for your applications. These can easily be modified and applied to any Node.js application.</p>
+                <a href="https://github.com/CloudNativeJS/docker/blob/master/README.md#docker-templates-for-nodejs" class="btn btn-light">Docs</a>
+                <a href="https://github.com/CloudNativeJS/docker" class="btn btn-primary">View on GitHub</a>
+            </div>
+            <div class="col-md">
+                <div class="col text-center">
+                    <img class="horizontal-img" src="assets/images/docker-logo.svg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="kubernetes" class="tech-area">
+        <div class="row align-items-center">
+            <div class="col-md text-center">
+                <img src="assets/images/kubernetes-logo.svg">
+            </div>
+            <div class="col-md">
+                <h3>Deploy to Kubernetes.</h3>
+                <p><a href="https://kubernetes.io/">Kubernetes</a> is an orchestration tool designed to automate the deployment, scaling, and operating of containerized applications in cluster environments. <a href="https://helm.sh/">Helm</a>, the package manager for Kubernetes, allows you to define, install, and upgrade your Kubernetes application.</p>
+                <p>The “helm” repository provides a template Helm chart that simplifies the process of taking a Docker image of your application and deploying it to Kubernetes along with configuration for replicas and autoscaling. Additionally, the templates provide configuration for using liveness and readiness based Health Checking, Prometheus metrics, OpenTracing with Zipkin, and support for using additional cloud-native technologies like Istio.</p>
+                <a href="https://github.com/CloudNativeJS/helm/blob/master/README.md#helm-chart-templates-for-nodejs-in-kubernetes" class="btn btn-light">Docs</a>
+                <a href="https://github.com/CloudNativeJS/helm" class="btn btn-primary">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+    <footer w3-include-html="partials/footer.html"></footer>
 
-<body>
+    <script>
+        w3.includeHTML();
+    </script>
 
-	<!--Main Navigation-->
-	<nav class="navbar navbar-expand-lg fixed-top scrolling-navbar" w3-include-html="partials/header.html"></nav>
-
-	<main>
-		<section id="landing">
-			<div class="container flex-center text-center">
-				<h2><img src="assets/CloudNative_Logo_Dark.svg" alt="CloudNativeJS.io logo"></h2>
-				<h3>Create Cloud Native Node.js Applications.</h3>
-				<p>Nearly all Node.js applications are now deployed to the cloud, but only 12% of these utilize the full potential of modern cloud computing platforms.</p>
-				<p>CloudNativeJS is an open source community project that aims to provide best-practices, assets, and tools to make it easier to integrate open source technologies from the Cloud Native Computing Foundation (CNCF) and build enterprise-grade, cloud native
-					Node.js applications.</p>
-				<a href="#modules">
-					<div class="arrow"></div>
-				</a>
-			</div>
-		</section>
-
-		<section id="modules" ;>
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-lg-6" onmouseover="document.getElementById('anchor1').style.visibility='visible'" onmouseout="document.getElementById('anchor1').style.visibility='hidden'">
-						<h2 class="display-4">Choose your modules...</h2>
-						<p>CloudNativeJS’s Module Insights helps you choose which modules you should depend on in your Enterprise Node.js applications. Module Insights gathers information about popular Node.js modules, including their stability, license, and version information.
-							It also executes a modules' own test suite against all current LTS versions of Node.js across multiple platforms, to determine whether a module is passing its own test suite across the stable major Node.js versions. You can use these test results
-							to determine whether the Node.js module you are selecting is appropriate for your target deployment architecture.
-						</p>
-						<a href="./modules-faq.html" class="btn btn-secondary btn-lg btn-block" target="_blank" role="button">Docs <i class="far fa-file-alt"></i></a>
-						<a href="https://modules.cloudnativejs.io" class="btn btn-info btn-lg btn-block" target="_blank" role="button">Launch Module Insights <i class="fas fa-external-link-alt"></i></a>
-					</div>
-					<div class="col-lg-6 vertical-center">
-						<img src="assets/module-insights-macbook.svg">
-					</div>
-				</div>
-			</div>
-			</div>
-		</section>
-
-		<section id="health">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-lg-6 vertical-center">
-						<img src="assets/healthcheck.svg" style="color: red;">
-					</div>
-					<div class="col-lg-6">
-						<h2 class="display-4">Add health checking...</h2>
-						<p>When using cloud platforms such as Kubernetes, health-checking enables the cloud platform to determine readiness (is your application ready to receive requests?) and liveness (is your application live or does it need to be restarted?) of your application.</p>
-						<p>The ‘cloud-health’ module is a core library that provides health checking and gives you more control over application lifecycle management (startup, running, shutdown). The 'cloud-health-connect' module exposes the health-check information on readiness/liveness
-							endpoints to help the cloud platforms manage your application.</p>
-						<a href="https://github.com/CloudNativeJS/cloud-health-connect/blob/master/README.md#cloud-health-connect" class="btn btn-secondary btn-lg btn-block" target="_blank" role="button">Docs <i class="far fa-file-alt"></i></a>
-						<a href="https://github.com/CloudNativeJS/cloud-health-connect" class="btn btn-info btn-lg btn-block" target="_blank" role="button">View on GitHub<i class="fab fa-github"></i></a>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="zipkin">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-lg-6">
-						<h2 class="display-4">Track your requests...</h2>
-						<p>Track requests as they propagate through distributed services and understand how relationships between these requests influence your application.
-							<a href="http://opentracing.io/">OpenTracing</a> enables vendor neutral instrumentation of distributed applications with minimal effort. See how you can instrument your application with OpenTracing based request tracking with a one-line change.</p>
-						<a href="https://github.com/CloudNativeJS/appmetrics-zipkin/blob/master/README.md#appmetrics-zipkin" class="btn btn-secondary btn-lg btn-block" target="_blank" role="button">Docs <i class="far fa-file-alt"></i></a>
-						<a href="https://github.com/CloudNativeJS/appmetrics-zipkin" class="btn btn-info btn-lg btn-block" target="_blank" ole="button">View on GitHub<i class="fab fa-github"></i></a>
-					</div>
-					<div class="col-lg-6 vertical-center">
-						<img src="assets/opentracing-logo.png">
-					</div>
-				</div>
-			</div>
-			</div>
-		</section>
-
-		<section id="prometheus">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-lg-6 vertical-center">
-						<img src="assets/prometheus-logo.svg">
-					</div>
-					<div class="col-lg-6">
-						<h2 class="display-4">Power your metrics...</h2>
-						<p>Enable powerful monitoring for your distributed application and configure rule-based alerting using <a href="https://prometheus.io/">Prometheus</a> open source project. This is vital for diagnosing problems and ensuring the reliability of your application.</p>
-						<p>The "appmetrics-prometheus" module will collect a wide range of resource-centric (CPU, memory) and application-centric (HTTP request responsiveness) metrics from your application, and then expose them as multi-dimensional time-series data through
-							an application endpoint for Prometheus to scrape and aggregate.</p>
-						<a href="https://github.com/CloudNativeJS/appmetrics-prometheus/blob/master/README.md#appmetrics-prometheus" class="btn btn-secondary btn-lg btn-block" target="_blank" role="button">Docs <i class="far fa-file-alt"></i></a>
-						<a href="https://github.com/CloudNativeJS/appmetrics-prometheus" class="btn btn-info btn-lg btn-block" target="_blank" role="button">View on GitHub <i class="fab fa-github"></i></a>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="docker">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-lg-6">
-						<h2 class="display-4">Build your Docker image...</h2>
-						<p>Docker makes it easy to create, deploy, and run applications by using containers. Containers allow a developer to package up an application with everything it needs, ensuring that it runs consistently across Docker enabled machines regardless of
-							any customization.</p>
-						<p>The “docker” repository provides a set of template Dockerfiles that implement the best-practices for building development and production Docker images for your applications. These can easily be modified and applied to any Node.js application.</p>
-						<a href="https://github.com/CloudNativeJS/docker/blob/master/README.md#docker-templates-for-nodejs" class="btn btn-secondary btn-lg btn-block" target="_blank" role="button">Docs <i class="far fa-file-alt"></i></a>
-						<a href="https://github.com/CloudNativeJS/docker" class="btn btn-info btn-lg btn-block" target="_blank" role="button">View on GitHub <i class="fab fa-github"></i></a>
-					</div>
-					<div class="col-lg-6 vertical-center">
-						<img src="assets/docker-logo.svg">
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="kubernetes">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-lg-6 vertical-center">
-						<img src="assets/kubernetes-logo.svg">
-					</div>
-					<div class="col-lg-6">
-						<h2 class="display-4">Deploy to Kubernetes.</h2>
-						<p>
-							<a href="https://kubernetes.io/">Kubernetes</a> is an orchestration tool designed to automate the deployment, scaling, and operating of containerized applications in cluster environments. <a href="https://helm.sh/">Helm</a>, the package manager for Kubernetes, allows you to define,
-								install, and upgrade your Kubernetes application.
-						</p>
-
-						<p>
-							The “helm” repository provides a template Helm chart that simplifies the process of taking a Docker image of your application and deploying it to Kubernetes along with configuration for replicas and autoscaling. Additionally, the templates provide configuration
-							for using liveness and readiness based Health Checking, Prometheus metrics, OpenTracing with Zipkin, and support for using additional cloud-native technologies like Istio.
-						</p>
-						<a href="https://github.com/CloudNativeJS/helm/blob/master/README.md#helm-chart-templates-for-nodejs-in-kubernetes" class="btn btn-secondary btn-lg btn-block" target="_blank" role="button">Docs <i class="far fa-file-alt"></i></a>
-						<a href="https://github.com/CloudNativeJS/helm" class="btn btn-info btn-lg btn-block" target="_blank" role="button">View on GitHub<i class="fab fa-github"></i></a>
-					</div>
-				</div>
-			</div>
-		</section>
-	</main>
-
-	<footer w3-include-html="partials/footer.html"></footer>
-
-	<script>
-		w3.includeHTML();
-	</script>
-
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-</body>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
 </html>

@@ -2,27 +2,35 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122616711-2"></script>
-  <script src="https://www.w3schools.com/lib/w3.js"></script>
-  <script w3-include-html="partials/google-analytics.html"></script>
-  <script type="application/ld+json" w3-include-html="partials/structured-data.html"></script>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About</title>
-  <link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/main.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122616711-2"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script w3-include-html="partials/google-analytics.html"></script>
+    <script type="application/ld+json" w3-include-html="partials/structured-data.html"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About</title>
+    <link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/styles/main.css">
 </head>
 
 <body>
-
-  <!--Main Navigation-->
-  <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar" w3-include-html="partials/header.html"></nav>
-
+    <nav class="simple-nav">
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/blogs.html">Blogs</a></li>
+			<span class="social-icons">
+				<li><a href="https://twitter.com/cloudnativejs"<i class="fab fa-twitter" style="font-size:26px"></i></a></li>
+				<li><a href="https://github.com/cloudnativejs"<i class="fab fa-github" style="font-size:26px"></i></a></li>
+				<li><a href="mailto:jimmail@uk.ibm.com"<i class="far fa-envelope" style="font-size:26px"></i></a></li>
+				<li><a href="https://node-js.slack.com/messages/CBV29RX62"<i class="fab fa-slack-hash" style="font-size:26px"></i></a></li>
+			</span>
+		</ul>
+	</nav>
   <div id="about" class="container">
     <h1 class="text-center">About</h1>
     <section>
@@ -79,6 +87,8 @@
         </p>
     </section>
   </div>
+  
+  <footer w3-include-html="partials/footer.html"></footer>
 
   <script>
     w3.includeHTML();
