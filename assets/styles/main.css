@@ -68,7 +68,7 @@ nav .social-icons a {
 }
 
 #landing .landing-inner > .container img {
-    margin-top: 15vh;
+    margin-top: 16vh;
     margin-bottom: 10vh;
     max-width: 30em;
 }
@@ -177,6 +177,13 @@ footer p {
     #landing .landing-inner > .container img {
         margin-top: 18vh;
         margin-bottom: 15vh;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #landing .landing-inner > .container img {
+        margin-top: 22vh;
+        margin-bottom: 20vh;
     }
 }
 
