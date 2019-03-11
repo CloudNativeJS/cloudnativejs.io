@@ -168,22 +168,60 @@ footer p {
     color: var(--light-grey);
 }
 
-/* Mobile Overrides */
-
-@media only screen and (max-width: 540px) {
-    #landing .landing-inner > .container img{
-        max-width: 90vw;
-    }
-    #landing .landing-inner > .container img {
-        margin-top: 18vh;
-        margin-bottom: 15vh;
-    }
+ #sponsors {
+    background-color: var(--light-grey);
+    padding: 3em 0 3em 0;
 }
 
+#sponsors h2 {
+    font-size: 3em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+#sponsors .sponsors-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60vw;
+    margin: 0 auto;
+}
+
+#sponsors .sponsor {
+    width: 33%;
+    padding: 0 2em;
+    margin-bottom: 5em;
+    text-align: center;
+}
+
+#sponsors .vertical-helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#sponsors .sponsor img {
+    max-height: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+#sponsors .sponsor img.small-img {
+    max-height: 60%;
+}
+
+/* Mobile Overrides */
 @media only screen and (max-width: 400px) {
     #landing .landing-inner > .container img {
         margin-top: 22vh;
         margin-bottom: 20vh;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    #sponsors .sponsors-wrapper {
+        width: 80vw;
     }
 }
 
@@ -197,12 +235,19 @@ footer p {
     nav .social-icons {
         position: static;
     }
+    #landing nav {
+        padding-left: 0;
+        padding-right: 0;
+    }
     nav ul {
         margin: 0 auto;
-        width: 10em;
+        width: 18em;
     }
     .tech-area {
         padding: 6em 3em;
+    }
+    #sponsors .sponsor {
+        width: 50%;
     }
 }
 
@@ -212,3 +257,18 @@ footer p {
     }
 }
 
+@media only screen and (max-width: 540px) {
+    #landing .landing-inner > .container img{
+        max-width: 90vw;
+    }
+    #landing .landing-inner > .container img {
+        margin-top: 18vh;
+        margin-bottom: 15vh;
+    }
+     #sponsors .sponsors-wrapper {
+        width: 100vw;
+    }
+    #sponsors .sponsor {
+        width: 100%;
+    }
+}
