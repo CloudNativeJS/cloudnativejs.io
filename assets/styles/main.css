@@ -36,7 +36,7 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
 }
 
 nav a {
@@ -52,6 +52,10 @@ nav a:hover {
 nav .social-icons {
     position: absolute;
     right: 0;
+}
+
+nav .social-icons li {
+    margin-bottom: 0;
 }
 
 nav .social-icons a {
@@ -235,13 +239,16 @@ footer p {
     nav .social-icons {
         position: static;
     }
-    #landing nav {
+    nav {
         padding-left: 0;
         padding-right: 0;
     }
     nav ul {
         margin: 0 auto;
         width: 18em;
+    }
+    nav ul li {
+        margin-bottom: .5em;
     }
     .tech-area {
         padding: 6em 3em;
