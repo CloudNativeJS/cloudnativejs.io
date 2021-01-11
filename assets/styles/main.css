@@ -7,6 +7,11 @@
     --white: #ffffff;
 }
 
+#banner {
+    display: block;
+    text-align: center;
+}
+
 /* Landing page */
 #landing {
     min-height: 100vh;
