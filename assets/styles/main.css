@@ -7,9 +7,23 @@
     --white: #ffffff;
 }
 
+/* Deprecation banner */
+
+#banner {
+    margin: auto;
+    padding: 1.5em;
+    text-align: center;
+    min-height: 5vh;
+}
+
+#banner p {
+    margin: 0;
+    font-size: 1.3em;
+}
+
 /* Landing page */
 #landing {
-    min-height: 100vh;
+    min-height: 86vh;
     position: relative;
 }
 
@@ -133,6 +147,7 @@ nav .social-icons a {
 }
 
 /* Footer */
+
 footer {
     color: var(--light-grey);
     background-color: var(--secondary-color);
